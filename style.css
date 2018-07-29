@@ -1,0 +1,14 @@
+body {
+  background-color: #EEEEEE;
+  text-align: center;
+}
+
+img {
+  margin: 10px;
+}
+
+.cat-name {
+  display: inline-block;
+  margin-right: 50px;
+  margin-left: 50px;
+}
