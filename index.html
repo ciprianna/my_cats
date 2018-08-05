@@ -1,14 +1,36 @@
 <!DOCTYPE HTML>
 <html>
   <head>
+    <!-- import the webpage's css file -->
     <link rel="stylesheet" href="./style.css">
+
+    <!-- import the webpage's javascript file -->
+    <script src="./script.js"></script>
   </head>
   <body>
     <h1>Kittens</h1>
-    <h2 class="cat-name">Calypso</h2>
-    <h2 class="cat-name">Harry</h2>
-    <br />
-    <img width="200" src="./assets/Calypso.jpg" alt="Calypso, a large orange cat." />
-    <img width="200" src="./assets/Harry.jpg" alt="Harry, a small gray cat." />
+    <div class="tab">
+      <button class="tablinks" onclick="openPet(event, 'Calypso')">Calypso</button>
+      <button class="tablinks" onclick="openPet(event, 'Harry')">Harry</button>
+      <button class="tablinks" onclick="openPet(event, 'Pug')">Pug</button>
+    </div>
+
+    <div id="Calypso" class="tabcontent">
+      <h3>Calypso</h3>
+      <img width="200" src="./assets/Calypso.jpg" alt="Calypso, a large orange cat." />
+      <p>Calypso is a sweet orange cat who will turn 11 this year. He is 18 and a half pounds.</p>
+    </div>
+
+    <div id="Harry" class="tabcontent">
+      <h3>Harry</h3>
+      <img width="200" src="./assets/Harry.jpg" alt="Harry, a small gray cat." />
+      <p>Harry is a loving gray cat who is 18 years old. He weighs 7 pounds.</p>
+    </div>
+
+    <div id="Pug" class="tabcontent">
+      <h3>Pug</h3>
+      <img width="200" src="./assets/pug.jpg" alt="A random pug." />
+      <p>This is a random picture of a pug.</p>
+    </div>
   </body>
 </html>
